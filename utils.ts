@@ -18,7 +18,7 @@ export async function getNewThreads() {
         return thread.text && !storedThreadTitles.includes(thread.text)
     })
 
-    await writeStoredThreads(latestThreads)
+    if (newThreads.length) await writeStoredThreads(latestThreads)
 
     return newThreads
 }
