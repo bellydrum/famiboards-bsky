@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "lib": [
+          "ES2021.String"
+        ]
+    }
+}
